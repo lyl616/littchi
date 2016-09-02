@@ -1,0 +1,11 @@
+com\litchi\mapper\OrderShippingMapper.class
+com\litchi\mapper\UserMapper.class
+com\litchi\mapper\ContentMapper.class
+com\litchi\mapper\ItemDescMapper.class
+com\litchi\mapper\OrderItemMapper.class
+com\litchi\mapper\ItemMapper.class
+com\litchi\mapper\ItemCatMapper.class
+com\litchi\mapper\ItemParamItemMapper.class
+com\litchi\mapper\OrderMapper.class
+com\litchi\mapper\ContentCategoryMapper.class
+com\litchi\mapper\ItemParamMapper.class
