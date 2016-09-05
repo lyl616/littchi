@@ -9,11 +9,11 @@ public class PageController {
 
 	@RequestMapping("/")
 	public String showIndex() {
-		return "index";
+		return "inedx";
 	}
 
 	@RequestMapping("/{page}")
-	public String showPage(@PathVariable String page) {
+	public String showPpage(@PathVariable String page) {
 		return page;
 	}
 }
