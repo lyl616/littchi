@@ -2,7 +2,6 @@ package com.page.test;
 
 import java.util.List;
 
-import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,7 +14,6 @@ import com.litchi.pojo.ItemExample;
 public class PageTest {
 
 	
-	@Test
 	public  void test( ) {
 		@SuppressWarnings("resource")
 		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
