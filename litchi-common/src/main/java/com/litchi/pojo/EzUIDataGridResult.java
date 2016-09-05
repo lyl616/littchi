@@ -3,13 +3,12 @@ package com.litchi.pojo;
 import java.io.Serializable;
 import java.util.List;
 
-public class EzUIDataGridResult implements Serializable{
-	
-	/** serialVersionUID*/
+public class EzUIDataGridResult implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 
 	private long total;
-	
+
 	private List<?> rows;
 
 	public long getTotal() {
@@ -27,6 +26,5 @@ public class EzUIDataGridResult implements Serializable{
 	public void setRows(List<?> rows) {
 		this.rows = rows;
 	}
-	
-	
+
 }
