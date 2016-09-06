@@ -25,9 +25,9 @@
 		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
 		<property name="maxUploadSize" value="5242880"></property>
 	</bean>
-	
+
 	<!-- <mvc:resources location="" mapping=""/> -->
-	<mvc:default-servlet-handler/>
+	<mvc:default-servlet-handler />
 	<mvc:resources location="/js/" mapping="/js/**" />
 	<mvc:resources location="/css/" mapping="/css/**" />
 
@@ -40,8 +40,7 @@
 		id="itemService" timeout="100000" />
 	<dubbo:reference interface="com.litchi.service.ItemCatService"
 		id="itemCatService" timeout="100000" />
-
-
-	
+	<dubbo:reference interface="com.litchi.content.service.ContentCategoryService"
+		id="contentCategoryService" timeout="100000" />
 
 </beans>
