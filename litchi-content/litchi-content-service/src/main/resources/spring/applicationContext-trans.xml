@@ -25,6 +25,6 @@
 	</tx:advice>
 	<!-- 切面 -->
 	<aop:config>
-		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.litchi.service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.litchi.content.service.*.*(..))" />
 	</aop:config>
 </beans>
