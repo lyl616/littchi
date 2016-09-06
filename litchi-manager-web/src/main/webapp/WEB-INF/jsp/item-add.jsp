@@ -82,6 +82,7 @@
 			$.messager.alert('提示','表单还未填写完成!');
 			return ;
 		}
+// 		alert(eval($("#itemAddForm [name=priceView]").val()) * 100);
 		//取商品价格，单位为“分”
 		$("#itemAddForm [name=price]").val(eval($("#itemAddForm [name=priceView]").val()) * 100);
 		//同步文本框中的商品描述

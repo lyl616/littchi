@@ -9,7 +9,7 @@ public class PageController {
 
 	@RequestMapping("/")
 	public String showIndex() {
-		return "inedx";
+		return "index";
 	}
 
 	@RequestMapping("/{page}")
