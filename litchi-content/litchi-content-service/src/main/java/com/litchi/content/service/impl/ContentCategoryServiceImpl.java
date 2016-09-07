@@ -77,4 +77,11 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		return null;
 	}
 
+	@Override
+	public LitchiMsgUtils updateContentCategory(Long id, String name) {
+		
+//		this.contentCategoryMapper.updateByExample(record, example)
+		return LitchiMsgUtils.ok();
+	}
+
 }

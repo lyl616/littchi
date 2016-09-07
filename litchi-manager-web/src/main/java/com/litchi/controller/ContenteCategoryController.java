@@ -45,6 +45,12 @@ public class ContenteCategoryController {
 		LitchiMsgUtils result = contentCategoryService.delCategoryNode(parentId, id);
 		return result;
 	}
+	@RequestMapping(value = "/update/", method = RequestMethod.POST)
+	@ResponseBody
+	public LitchiMsgUtils updateContentCategory(Long id, String name) {
+		LitchiMsgUtils result = contentCategoryService.updateContentCategory(id, name);
+		return result;
+	}
 	
 
 }

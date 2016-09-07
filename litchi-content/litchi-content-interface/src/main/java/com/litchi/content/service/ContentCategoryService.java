@@ -12,4 +12,6 @@ public interface ContentCategoryService {
 	LitchiMsgUtils addCategoryNode(long parentId, String name);
 
 	LitchiMsgUtils delCategoryNode(Long parentId, Long id);
+
+	LitchiMsgUtils updateContentCategory(Long id, String name);
 }
