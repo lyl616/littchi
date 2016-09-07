@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.litchi.pojo.EasyUIResult;
+import com.litchi.pojo.EzUIDataGridResult;
 import com.litchi.pojo.Item;
 import com.litchi.service.ItemService;
-import com.litchi.utils.LitchiResult;
+import com.litchi.utils.LitchiMsgUtils;
 
 @Controller
 public class ItemController {
@@ -26,14 +26,14 @@ public class ItemController {
 
 	@RequestMapping("/item/list")
 	@ResponseBody
-	public EasyUIResult getItemList(@RequestParam(defaultValue = "1") Integer page,
+	public EzUIDataGridResult getItemList(@RequestParam(defaultValue = "1") Integer page,
 			@RequestParam(defaultValue = "30") Integer rows) {
 		return this.itemService.getItemList(page, rows);
 	}
 	
 	@RequestMapping("/item/save")
 	@ResponseBody
-	public LitchiResult saveItem(Item item,String desc) {
+	public LitchiMsgUtils saveItem(Item item,String desc) {
 		return this.itemService.saveItem(item, desc);
 	}
 }

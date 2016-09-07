@@ -2,8 +2,8 @@ package com.litchi.service;
 
 import java.util.List;
 
-import com.litchi.pojo.EasyUITreeNode;
+import com.litchi.pojo.EzUITreNode;
 
 public interface ItemCatService {
-	List<EasyUITreeNode> getItemCatList(Long parentId);
+	List<EzUITreNode> getItemCatList(Long parentId);
 }
