@@ -1,8 +1,0 @@
-com\litchi\controller\PageController.class
-com\litchi\controller\ItemController.class
-com\litchi\controller\ItemCatController.class
-com\litchi\service\PictureService.class
-com\litchi\controller\ContenteCategoryController.class
-com\litchi\controller\PictureController.class
-com\litchi\utils\FastDFSClient.class
-com\litchi\controller\CategoryController.class
