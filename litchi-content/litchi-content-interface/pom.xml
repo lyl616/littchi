@@ -8,7 +8,6 @@
 	</parent>
 	<artifactId>litchi-content-interface</artifactId>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>com.litchi</groupId>
