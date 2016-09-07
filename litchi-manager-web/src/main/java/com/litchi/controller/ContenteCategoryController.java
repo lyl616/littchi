@@ -39,13 +39,13 @@ public class ContenteCategoryController {
 		return result;
 	}
 	
-	@RequestMapping(value = "/delete/", method = RequestMethod.POST)
+	@RequestMapping(value = "/delete", method = RequestMethod.POST)
 	@ResponseBody
 	public LitchiMsgUtils deleteContentCategory(Long parentId, Long id) {
 		LitchiMsgUtils result = contentCategoryService.delCategoryNode(parentId, id);
 		return result;
 	}
-	@RequestMapping(value = "/update/", method = RequestMethod.POST)
+	@RequestMapping(value = "/update", method = RequestMethod.POST)
 	@ResponseBody
 	public LitchiMsgUtils updateContentCategory(Long id, String name) {
 		LitchiMsgUtils result = contentCategoryService.updateContentCategory(id, name);
