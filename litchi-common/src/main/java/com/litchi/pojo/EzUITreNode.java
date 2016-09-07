@@ -2,7 +2,7 @@ package com.litchi.pojo;
 
 import java.io.Serializable;
 
-public class EasyUITreeNode implements Serializable {
+public class EzUITreNode implements Serializable {
 
 	/** serialVersionUID */
 	private static final long serialVersionUID = 1L;

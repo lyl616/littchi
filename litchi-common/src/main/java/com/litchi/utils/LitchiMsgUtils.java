@@ -7,9 +7,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
- * 淘淘商城自定义响应结构
+ * Litchi商城自定义响应结构
  */
-public class LitchiResult implements Serializable{
+public class LitchiMsgUtils implements Serializable{
 
     /** serialVersionUID*/
 	private static final long serialVersionUID = 1L;
@@ -26,33 +26,33 @@ public class LitchiResult implements Serializable{
     // 响应中的数据
     private Object data;
 
-    public static LitchiResult build(Integer status, String msg, Object data) {
-        return new LitchiResult(status, msg, data);
+    public static LitchiMsgUtils build(Integer status, String msg, Object data) {
+        return new LitchiMsgUtils(status, msg, data);
     }
 
-    public static LitchiResult ok(Object data) {
-        return new LitchiResult(data);
+    public static LitchiMsgUtils ok(Object data) {
+        return new LitchiMsgUtils(data);
     }
 
-    public static LitchiResult ok() {
-        return new LitchiResult(null);
+    public static LitchiMsgUtils ok() {
+        return new LitchiMsgUtils(null);
     }
 
-    public LitchiResult() {
+    public LitchiMsgUtils() {
 
     }
 
-    public static LitchiResult build(Integer status, String msg) {
-        return new LitchiResult(status, msg, null);
+    public static LitchiMsgUtils build(Integer status, String msg) {
+        return new LitchiMsgUtils(status, msg, null);
     }
 
-    public LitchiResult(Integer status, String msg, Object data) {
+    public LitchiMsgUtils(Integer status, String msg, Object data) {
         this.status = status;
         this.msg = msg;
         this.data = data;
     }
 
-    public LitchiResult(Object data) {
+    public LitchiMsgUtils(Object data) {
         this.status = 200;
         this.msg = "OK";
         this.data = data;
@@ -93,10 +93,10 @@ public class LitchiResult implements Serializable{
      * @param clazz LitchiResult中的object类型
      * @return
      */
-    public static LitchiResult formatToPojo(String jsonData, Class<?> clazz) {
+    public static LitchiMsgUtils formatToPojo(String jsonData, Class<?> clazz) {
         try {
             if (clazz == null) {
-                return MAPPER.readValue(jsonData, LitchiResult.class);
+                return MAPPER.readValue(jsonData, LitchiMsgUtils.class);
             }
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
@@ -120,9 +120,9 @@ public class LitchiResult implements Serializable{
      * @param json
      * @return
      */
-    public static LitchiResult format(String json) {
+    public static LitchiMsgUtils format(String json) {
         try {
-            return MAPPER.readValue(json, LitchiResult.class);
+            return MAPPER.readValue(json, LitchiMsgUtils.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -136,7 +136,7 @@ public class LitchiResult implements Serializable{
      * @param clazz 集合中的类型
      * @return
      */
-    public static LitchiResult formatToList(String jsonData, Class<?> clazz) {
+    public static LitchiMsgUtils formatToList(String jsonData, Class<?> clazz) {
         try {
             JsonNode jsonNode = MAPPER.readTree(jsonData);
             JsonNode data = jsonNode.get("data");
