@@ -38,5 +38,13 @@ public class ContenteCategoryController {
 		LitchiMsgUtils result = contentCategoryService.addCategoryNode(parentId, name);
 		return result;
 	}
+	
+	@RequestMapping(value = "/delete/", method = RequestMethod.POST)
+	@ResponseBody
+	public LitchiMsgUtils deleteContentCategory(Long parentId, Long id) {
+		LitchiMsgUtils result = contentCategoryService.delCategoryNode(parentId, id);
+		return result;
+	}
+	
 
 }

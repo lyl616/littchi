@@ -72,4 +72,9 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 
 	}
 
+	@Override
+	public LitchiMsgUtils delCategoryNode(Long parentId, Long id) {
+		return null;
+	}
+
 }

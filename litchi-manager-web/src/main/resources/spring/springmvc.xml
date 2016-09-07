@@ -42,5 +42,7 @@
 		id="itemCatService" timeout="100000" />
 	<dubbo:reference interface="com.litchi.content.service.ContentCategoryService"
 		id="contentCategoryService" timeout="100000" />
+	<dubbo:reference interface="com.litchi.content.service.ContentService"
+		id="contentService" timeout="100000" />
 
 </beans>

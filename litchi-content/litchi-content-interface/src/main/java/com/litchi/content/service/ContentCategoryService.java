@@ -10,4 +10,6 @@ public interface ContentCategoryService {
 	List<EzUITreNode> getContentCatList(Long parentId);
 
 	LitchiMsgUtils addCategoryNode(long parentId, String name);
+
+	LitchiMsgUtils delCategoryNode(Long parentId, Long id);
 }
