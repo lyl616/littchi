@@ -3,7 +3,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="litchi" version="2.5">
-	<display-name>litchi-manager</display-name>
+	<display-name>litchi-content</display-name>
 
 
 	<!-- 加载spring容器 -->
@@ -14,7 +14,6 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
 
 
 	<welcome-file-list>

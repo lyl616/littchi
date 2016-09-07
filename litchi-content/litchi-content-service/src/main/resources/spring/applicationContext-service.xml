@@ -9,21 +9,21 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<!-- 配置包扫描器 -->
 	<context:component-scan base-package="com.litchi.content.service" />
 
 
 	<!-- 提供方应用信息，用于计算依赖关系 -->
-	<dubbo:application name="litchi-content" />
+	<dubbo:application name="litchi-content-service" />
 	<!-- 使用multicast广播注册中心暴露服务地址 -->
 	<!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
 	<dubbo:registry protocol="zookeeper" address="192.168.224.112:2181" />
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20881" />
-	<context:component-scan base-package="com.litchi.service" />
 	<!-- 声明需要暴露的服务接口 -->
-	<dubbo:service interface="com.litchi.content.service.ContentCategoryService"
-	ref="contentCategoryServiceImpl" timeout="100000" />
+	<dubbo:service interface="com.litchi.content.service.ContentCategoryService" ref="contentCategoryServiceImpl" 
+		timeout="100000" />
+	<!-- <dubbo:service interface="com.litchi.service.ItemCatService" ref="itemCatServiceImpl" 
+		timeout="100000" /> -->
 
 
 

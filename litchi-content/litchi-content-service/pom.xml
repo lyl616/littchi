@@ -20,7 +20,6 @@
 			<artifactId>litchi-content-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -74,5 +73,6 @@
 			<artifactId>zkclient</artifactId>
 		</dependency>
 	</dependencies>
+
 
 </project>

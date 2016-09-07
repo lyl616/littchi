@@ -5,5 +5,5 @@ import java.util.List;
 import com.litchi.pojo.EasyUITreeNode;
 
 public interface ContentCategoryService {
-	List<EasyUITreeNode> getContentCategoryList(Long parentId);
+	List<EasyUITreeNode> getContentCatList(Long parentId);
 }

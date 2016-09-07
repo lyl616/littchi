@@ -19,6 +19,8 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	
+	
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -28,7 +30,7 @@
 					<artifactId>tomcat7-maven-plugin</artifactId>
 					<configuration>
 						<path>/</path>
-						<port>8093</port>
+						<port>8084</port>
 					</configuration>
 				</plugin>
 			</plugins>

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.litchi.content.service.ContentCategoryService;
 import com.litchi.mapper.ContentCategoryMapper;
 import com.litchi.pojo.ContentCategory;
@@ -17,26 +17,29 @@ import com.litchi.pojo.EasyUITreeNode;
 public class ContentCategoryServiceImpl implements ContentCategoryService {
 
 	@Autowired
-	private ContentCategoryMapper contentCategoryMapper;
+	ContentCategoryMapper contentCategoryMapper;
 
 	@Override
-	public List<EasyUITreeNode> getContentCategoryList(Long parentId) {
-		// 查询 列表节点
+	public List<EasyUITreeNode> getContentCatList(Long parentId) {
+		// 查询节点列表
 		ContentCategoryExample example = new ContentCategoryExample();
+		// 设置查询条件
 		Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(parentId);
 		// 执行查询
-		List<ContentCategory> list = this.contentCategoryMapper.selectByExample(example);
-		List<EasyUITreeNode> result = new ArrayList<>();
-		for (ContentCategory category : list) {
+		List<ContentCategory> list = contentCategoryMapper.selectByExample(example);
+		List<EasyUITreeNode> resultList = new ArrayList<>();
+		for (ContentCategory tbContentCategory : list) {
 			EasyUITreeNode node = new EasyUITreeNode();
-			node.setId(category.getId());
-			node.setText(category.getName());
-			node.setState(category.getIsParent() ? "closed" : "open");
-			result.add(node);
-		}
+			node.setId(tbContentCategory.getId());
+			node.setText(tbContentCategory.getName());
+			// 如果此节点下有子节点那就是“closed”，如果没有子节点就是“open”
+			node.setState(tbContentCategory.getIsParent() ? "closed" : "open");
 
-		return result;
+			resultList.add(node);
+		}
+		return resultList;
+
 	}
 
 }
