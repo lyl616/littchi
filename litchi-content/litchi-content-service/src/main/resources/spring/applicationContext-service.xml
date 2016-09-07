@@ -22,8 +22,8 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.litchi.content.service.ContentCategoryService" ref="contentCategoryServiceImpl" 
 		timeout="100000" />
-	<!-- <dubbo:service interface="com.litchi.service.ItemCatService" ref="itemCatServiceImpl" 
-		timeout="100000" /> -->
+	<dubbo:service interface="com.litchi.content.service.ContentService" ref="contentServiceImpl" 
+		timeout="100000" />
 
 
 
