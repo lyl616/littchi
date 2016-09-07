@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.litchi.mapper.ItemCatMapper;
-import com.litchi.pojo.EasyUITreeNode;
+import com.litchi.pojo.EzUITreNode;
 import com.litchi.pojo.ItemCat;
 import com.litchi.pojo.ItemCatExample;
 import com.litchi.pojo.ItemCatExample.Criteria;
@@ -20,7 +20,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 	private ItemCatMapper itemCatMapper;
 
 	@Override
-	public List<EasyUITreeNode> getItemCatList(Long parentId) {
+	public List<EzUITreNode> getItemCatList(Long parentId) {
 
 		// 根据parentId查询子节点列表
 		// 设置查询条件
@@ -33,9 +33,9 @@ public class ItemCatServiceImpl implements ItemCatService {
 		// 执行查询
 		List<ItemCat> list = itemCatMapper.selectByExample(example);
 		// 转换成EasyUITreeNode列表
-		List<EasyUITreeNode> nodeList = new ArrayList<>();
+		List<EzUITreNode> nodeList = new ArrayList<>();
 		for (ItemCat ItemCat : list) {
-			EasyUITreeNode node = new EasyUITreeNode();
+			EzUITreNode node = new EzUITreNode();
 			node.setId(ItemCat.getId());
 			node.setText(ItemCat.getName());
 			// 节点状态，'open' 或 'closed'

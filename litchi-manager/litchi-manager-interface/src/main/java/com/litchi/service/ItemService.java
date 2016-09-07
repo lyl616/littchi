@@ -1,11 +1,14 @@
 package com.litchi.service;
 
-import com.litchi.pojo.EasyUIResult;
+import com.litchi.pojo.EzUIDataGridResult;
 import com.litchi.pojo.Item;
-import com.litchi.utils.LitchiResult;
+import com.litchi.utils.LitchiMsgUtils;
 
 public interface ItemService {
+	
 	Item getItemById(Long itemId);
-	EasyUIResult getItemList(int pageNum,int rows);
-	LitchiResult saveItem(Item item, String desc);
+
+	EzUIDataGridResult getItemList(int pageNum, int rows);
+
+	LitchiMsgUtils saveItem(Item item, String desc);
 }
