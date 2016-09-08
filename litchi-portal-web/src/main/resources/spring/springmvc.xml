@@ -12,7 +12,7 @@
 	<context:property-placeholder location="classpath:resource/resource.properties" />
 	<context:component-scan base-package="com.litchi.portal.controller" />
 	<mvc:annotation-driven />
-	
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
@@ -25,10 +25,8 @@
 	<dubbo:application name="litchi-portal-web" />
 	<!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
 	<dubbo:registry protocol="zookeeper" address="192.168.224.112:2181" />
-	<dubbo:reference interface="com.litchi.service.ItemService"
-		id="itemService" timeout="100000" />
-	<dubbo:reference interface="com.litchi.service.ItemCatService"
-		id="itemCatService" timeout="100000" />
+	<dubbo:reference interface="com.litchi.content.service.ContentService"
+		id="contentService" timeout="100000" />
 
 
 </beans>

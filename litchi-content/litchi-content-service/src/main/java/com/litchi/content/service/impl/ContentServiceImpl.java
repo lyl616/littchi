@@ -46,4 +46,15 @@ public class ContentServiceImpl implements ContentService {
 		return new EzUIDataGridResult(pageInfo.getTotal(), list);
 	}
 
+	@Override
+	public List<Content> getContentListByCid(long cid) {
+		ContentExample example = new ContentExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(cid);
+		// 执行查询
+		List<Content> list = contentMapper.selectByExample(example);
+		return list;
+
+	}
+
 }

@@ -11,16 +11,24 @@
 
 
 	<dependencies>
+	
 		<dependency>
 			<groupId>com.litchi</groupId>
 			<artifactId>litchi-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		
 		<!-- <dependency> -->
 		<!-- <groupId>com.litchi</groupId> -->
 		<!-- <artifactId>litchi-manager-interface</artifactId> -->
 		<!-- <version>0.0.1-SNAPSHOT</version> -->
 		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>com.litchi</groupId>
+			<artifactId>litchi-content-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -96,8 +104,9 @@
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
 		</dependency>
-
 	</dependencies>
+	
+	
 	<build>
 		<pluginManagement>
 			<plugins>
