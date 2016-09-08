@@ -6,7 +6,8 @@ import com.litchi.utils.LitchiMsgUtils;
 
 public interface ContentService {
 
-	EzUIDataGridResult getContentList(int page, int rows, Long categoryId);
+	EzUIDataGridResult listContent(Integer page, Integer rows, Long categoryId);
 
 	LitchiMsgUtils addContent(Content content);
+
 }

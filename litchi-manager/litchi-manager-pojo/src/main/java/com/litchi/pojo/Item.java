@@ -4,8 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Item implements Serializable {
-	/** serialVersionUID */
-	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3567403514598663097L;
 
 	private Long id;
 

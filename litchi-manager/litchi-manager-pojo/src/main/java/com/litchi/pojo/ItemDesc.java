@@ -4,8 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class ItemDesc implements Serializable {
-	/** serialVersionUID */
-	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4577131108813682379L;
 
 	private Long itemId;
 

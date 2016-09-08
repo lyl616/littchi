@@ -4,8 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class OrderShipping implements Serializable {
-    /** serialVersionUID*/
-	private static final long serialVersionUID = 1L;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6297315331761850368L;
 
 	private String orderId;
 

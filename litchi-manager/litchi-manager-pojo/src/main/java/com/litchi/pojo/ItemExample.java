@@ -1,15 +1,11 @@
 package com.litchi.pojo;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ItemExample implements Serializable {
-    /** serialVersionUID*/
-	private static final long serialVersionUID = 1L;
-
-	protected String orderByClause;
+public class ItemExample {
+    protected String orderByClause;
 
     protected boolean distinct;
 

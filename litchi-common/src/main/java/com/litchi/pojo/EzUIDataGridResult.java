@@ -27,4 +27,13 @@ public class EzUIDataGridResult implements Serializable {
 		this.rows = rows;
 	}
 
+	public EzUIDataGridResult(long total, List<?> rows) {
+		super();
+		this.total = total;
+		this.rows = rows;
+	}
+	public EzUIDataGridResult() {
+		super();
+	}
+
 }

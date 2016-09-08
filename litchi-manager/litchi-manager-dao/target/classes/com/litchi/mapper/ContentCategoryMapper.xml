@@ -103,9 +103,6 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.litchi.pojo.ContentCategory" >
-  <selectKey keyProperty="id" order="AFTER" resultType="long">
-  	select LAST_INSERT_ID();
-  </selectKey>
     insert into tb_content_category (id, parent_id, name, 
       status, sort_order, is_parent, 
       created, updated)
