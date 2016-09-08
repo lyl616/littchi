@@ -45,4 +45,7 @@
 	<dubbo:reference interface="com.litchi.content.service.ContentService"
 		id="contentService" timeout="100000" />
 
+	<dubbo:service interface="com.litchi.service.ItemParamService"
+		ref="itemParamService" timeout="100000" />
+
 </beans>

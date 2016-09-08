@@ -18,6 +18,7 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.litchi.service.ItemService" ref="itemServiceImpl" timeout="100000" />
 	<dubbo:service interface="com.litchi.service.ItemCatService" ref="itemCatServiceImpl" timeout="100000" />
+	<dubbo:service interface="com.litchi.service.ItemParamService" ref="itemParamServiceImpl" timeout="100000" />
 
 
 
