@@ -10,14 +10,15 @@ package org.csource.fastdfs;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Arrays;
 import java.net.Socket;
+import java.util.Arrays;
 
 /**
 * Tracker client
 * @author Happy Fish / YuQing
 * @version Version 1.19
 */
+@SuppressWarnings("all")
 public class TrackerClient
 {
 	protected TrackerGroup tracker_group;

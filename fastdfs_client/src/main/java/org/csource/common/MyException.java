@@ -13,6 +13,7 @@ package org.csource.common;
 * @author Happy Fish / YuQing
 * @version Version 1.0
 */
+@SuppressWarnings("all")
 public class MyException extends Exception
 {
     public MyException()

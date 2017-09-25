@@ -6,9 +6,7 @@
 		<artifactId>litchi-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.litchi</groupId>
 	<artifactId>litchi-content</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<!-- 依赖common工程 -->

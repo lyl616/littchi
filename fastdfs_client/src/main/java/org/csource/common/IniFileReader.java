@@ -8,17 +8,22 @@
 
 package org.csource.common;
 
-import java.io.*;
-import java.util.*;
-import org.csource.common.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Hashtable;
 
 /**
 * ini file reader / parser
 * @author Happy Fish / YuQing
 * @version Version 1.0
 */
+@SuppressWarnings("all")
 public class IniFileReader
 {
+	
 	private Hashtable paramTable;
 	private String conf_filename;
 	

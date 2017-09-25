@@ -8,16 +8,17 @@
 
 package org.csource.fastdfs;
 
-import java.io.*;
-import java.util.*;
-import java.net.*;
-import org.csource.common.*;
+import java.io.IOException;
+
+import org.csource.common.MyException;
+import org.csource.common.NameValuePair;
 
 /**
 * Storage client for 1 field file id: combined group name and filename
 * @author Happy Fish / YuQing
 * @version Version 1.21
 */
+@SuppressWarnings("all")
 public class StorageClient1 extends StorageClient
 {
 	public static final String SPLIT_GROUP_NAME_AND_FILENAME_SEPERATOR = "/";

@@ -52,7 +52,7 @@ import java.io.IOException;
  * version 1.0 1999 December 03 -- posted in comp.lang.java.programmer.
  * Futures Streams or files.
  */
-
+@SuppressWarnings("all")
 public class Base64
 {
 
@@ -461,7 +461,7 @@ public class Base64
          try
          {
             Base64 b64 = new Base64();
-            String str = "agfrtu¿¦etÊ²1234¼Ù´óerty¿Õ234·¢¿¦2344Ê²µÄ";
+            String str = "agfrtuï¿½ï¿½etÊ²1234ï¿½Ù´ï¿½ertyï¿½ï¿½234ï¿½ï¿½ï¿½ï¿½2344Ê²ï¿½ï¿½";
             String str64 = "";
 
             //encode

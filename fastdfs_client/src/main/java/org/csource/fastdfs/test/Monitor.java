@@ -9,8 +9,13 @@
 package org.csource.fastdfs.test;
 
 import java.text.SimpleDateFormat;
-import org.csource.common.*;
-import org.csource.fastdfs.*;
+
+import org.csource.fastdfs.ClientGlobal;
+import org.csource.fastdfs.ProtoCommon;
+import org.csource.fastdfs.StructGroupStat;
+import org.csource.fastdfs.StructStorageStat;
+import org.csource.fastdfs.TrackerClient;
+import org.csource.fastdfs.TrackerServer;
 
 /**
 * load test class
