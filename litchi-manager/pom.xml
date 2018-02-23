@@ -17,6 +17,11 @@
 			<artifactId>litchi-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId> 
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 
@@ -31,7 +36,7 @@
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>alfresco-public</id> 
+			<id>alfresco-public</id>
 			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
 		</pluginRepository>
 		<pluginRepository>
@@ -51,11 +56,11 @@
 		<plugins>
 			<!-- 配置tomcat插件 -->
 			<plugin>
-				<!-- <groupId>org.apache.tomcat.maven</groupId> -->
-				<!-- <artifactId>tomcat7-maven-plugin</artifactId> -->
 				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat8-maven-plugin</artifactId> 
-				<version>3.0-r1655215</version>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+<!-- 				<groupId>org.apache.tomcat.maven</groupId> -->
+<!-- 				<artifactId>tomcat8-maven-plugin</artifactId> -->
+<!-- 				<version>3.0-r1655215</version> -->
 				<configuration>
 					<path>/</path>
 					<port>8081</port>
