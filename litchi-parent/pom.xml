@@ -246,17 +246,23 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.5.1</version>
 					<configuration>
-						<source>1.7</source>
-						<target>1.7</target>
+						<source>1.8</source>
+						<target>1.8</target>
 						<encoding>UTF-8</encoding>
 					</configuration>
 				</plugin>
 				<!-- 配置Tomcat插件 -->
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
-				</plugin>
+	<!-- <plugin> -->
+	<!-- <groupId>org.apache.tomcat.maven</groupId> -->
+	<!-- <artifactId>tomcat7-maven-plugin</artifactId> -->
+	<!-- <version>2.2</version> -->
+	<!-- </plugin> -->
+				
+				<!-- <plugin> -->
+				<!-- <groupId>org.apache.tomcat.maven</groupId> -->
+				<!-- <artifactId>tomcat8-maven-plugin</artifactId> -->
+				<!-- <version>3.0-r1655215</version> -->
+				<!-- </plugin> -->
 			</plugins>
 		</pluginManagement>
 	</build>

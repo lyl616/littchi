@@ -27,12 +27,35 @@
 		<module>litchi-manager-interface</module>
 	</modules>
 
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>alfresco-public</id> 
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>alfresco-public-snapshots</id>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>beardedgeeks-releases</id>
+			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
+		</pluginRepository>
+	</pluginRepositories>
 	<build>
 		<plugins>
 			<!-- 配置tomcat插件 -->
 			<plugin>
+				<!-- <groupId>org.apache.tomcat.maven</groupId> -->
+				<!-- <artifactId>tomcat7-maven-plugin</artifactId> -->
 				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
+				<artifactId>tomcat8-maven-plugin</artifactId> 
+				<version>3.0-r1655215</version>
 				<configuration>
 					<path>/</path>
 					<port>8081</port>
