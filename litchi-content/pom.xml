@@ -20,25 +20,24 @@
 
 
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>alfresco-public</id>
-			<!-- <url>https://artifacts.alfresco.com/nexus/content/groups/public</url> -->
-			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
-		</pluginRepository>
-		<pluginRepository>
-			<id>alfresco-public-snapshots</id>
-			<url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
-			<id>beardedgeeks-releases</id>
-			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
-		</pluginRepository>
-	</pluginRepositories>
+<!-- 	<pluginRepositories> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<id>alfresco-public</id> --> 
+<!-- 			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url> -->
+<!-- 		</pluginRepository> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<id>alfresco-public-snapshots</id> -->
+<!-- 			<url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>true</enabled> -->
+<!-- 				<updatePolicy>daily</updatePolicy> -->
+<!-- 			</snapshots> -->
+<!-- 		</pluginRepository> -->
+<!-- 		<pluginRepository> -->
+<!-- 			<id>beardedgeeks-releases</id> -->
+<!-- 			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url> -->
+<!-- 		</pluginRepository> -->
+<!-- 	</pluginRepositories> -->
 
 	<build>
 		<pluginManagement>
